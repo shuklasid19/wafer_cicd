@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return "Flask app is running"
+    return "done with this"
 
 port = int(os.getenv("PORT", 5001))
 
@@ -27,4 +27,3 @@ if __name__ == "__main__":
     # print("Serving on %s %d" % (host, port))
     httpd.serve_forever()
 
-    
